@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: aquamarine;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+
+/* max query with max width */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    body{
+        background-color: green;
+    }
+    .large{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    body{
+        background-color:rgba(165, 165, 22, 0.47);
+    }
+    .large{
+        display: none;
+    }
+    .medium{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    body{
+        background-color: aquamarine;
+    }
+    .large{
+        display: none;
+    }
+    .medium{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 0px) and (max-width: 425px)  {
+    body{
+        background-color: rgba(153, 17, 17, 0.777);
+    }
+    .large{
+        display: none;
+    }
+    .medium{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .smartphone{
+        display: block;
+    }
+}
+
+/* media queries with min-width */
+
+/* @media  screen and (min-width:0px) {
+    body{
+        background-color: blueviolet;
+    }
+    .smartphone{
+        display: block;
+    }
+}
+
+@media screen and (min-width:425px) {
+    body{
+        background-color: olive;
+    }
+    .smartphone{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: indigo;
+    }
+    .smartphone{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .medium{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color: indianred;
+    }
+    .smartphone{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .medium{
+        display: none;
+    }
+    .large{
+        display: block;
+    }
+}
+
+/* media queries using both min width and max width */
+
+ 
+/* @media screen and (min-width:425px) and (max-width: 768px) {
+    body {
+        background-color: darkgrey;
+    }
+}   */
